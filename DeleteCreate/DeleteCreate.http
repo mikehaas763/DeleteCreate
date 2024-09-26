@@ -1,0 +1,36 @@
+@DeleteCreate_HostAddress = http://localhost:5147
+
+DELETE {{DeleteCreate_HostAddress}}/persons/
+Accept: application/json
+
+###
+
+GET {{DeleteCreate_HostAddress}}/persons/
+Accept: application/json
+Content-Type: application/json
+
+{ "name": "John Get" }
+
+###
+
+POST {{DeleteCreate_HostAddress}}/persons/
+Accept: application/json
+Content-Type: application/json
+
+{ "name": "John Post" }
+
+###
+
+PUT {{DeleteCreate_HostAddress}}/persons/
+Accept: application/json
+Content-Type: application/json
+
+{ "name": "John Put" }
+
+###
+
+PATCH {{DeleteCreate_HostAddress}}/persons/
+Accept: application/json
+Content-Type: application/json
+
+{ "name": "John Patch" }
